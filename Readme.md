@@ -32,8 +32,8 @@ sheet(el).show();
 A [`segmentio/overlay`](https://github.com/segmentio/overlay) element (with an `.overlay` class) is used to create the mask above the screen, so if you've already themed it you've got no more work to do.
 
 
-### Modal(el)
-  Create a new `Modal` instance with the given `el`.
+### Sheet(el)
+  Create a new `Sheet` instance with the given `el`.
 
 ### #show(fn)
   Show the sheet, emitting `show`, optionally calling `fn`.
