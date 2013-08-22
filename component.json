@@ -1,0 +1,23 @@
+{
+  "name": "sheet",
+  "repo": "segmentio/sheet",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "A special modal that slides out from the right or left side of the screen.",
+  "keywords": ["modal", "sheet", "ui", "overlay"],
+  "dependencies": {
+    "component/domify": "*",
+    "component/inherit": "*",
+    "segmentio/overlay": "*",
+    "segmentio/modal": "*",
+    "ianstormtaylor/redraw": "*"
+  },
+  "development": {
+    "component/assert": "*",
+    "segmentio/on-enter": "*"
+  },
+  "scripts": ["lib/index.js"],
+  "styles": ["lib/index.css"],
+  "templates": ["lib/index.html"],
+  "main": "lib/index.js"
+}

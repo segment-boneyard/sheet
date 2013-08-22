@@ -1,0 +1,47 @@
+
+/**
+ * Sheet.
+ *
+ * .sheet-overlay
+ * .sheet-wrapper
+ *   .sheet
+ *     .sheet-close-button
+ *     [content]
+ */
+
+.sheet {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60%;
+  -webkit-transition: -webkit-transform .3s;
+  transition: transform .3s;
+}
+
+
+/**
+ * Right-aligned.
+ */
+
+.sheet.right-aligned {
+  right: 0;
+}
+
+.sheet.right-aligned.hidden {
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+
+/**
+ * Left-aligned.
+ */
+
+.sheet.left-aligned {
+  left: 0;
+}
+
+.sheet.left-aligned.hidden {
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
