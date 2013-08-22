@@ -1,27 +1,29 @@
-# modal
+# sheet
 
-  A simple modal UI component.
+  A special modal that slides out from the right or left side of the screen.
+
+  ![example of a sheet](http://i.cloudup.com/HNkFjYOyCE.png)
 
 ## Installation
 
-    $ component install segmentio/modal
+    $ component install segmentio/sheet
 
 ## Example
 
 ```js
-var modal = require('modal');
-modal(el).show();
+var sheet = require('sheet');
+sheet(el).show();
 ```
 
-  To use it, pass in the `el` you want to "modal-ize".
+  To use it, pass in the `el` you want to "sheet-ize".
 
 ## API
 
 ```html
-<div class="overlay modal-overlay"></div>
-<div class="modal-wrapper">
-  <div class="modal">
-    <a class="modal-close-button"></a>
+<div class="overlay sheet-overlay"></div>
+<div class="sheet-wrapper">
+  <div class="sheet">
+    <a class="sheet-close-button"></a>
     { Your element gets injected here. }
   </div>
 </div>
@@ -34,25 +36,25 @@ A [`segmentio/overlay`](https://github.com/segmentio/overlay) element (with an `
   Create a new `Modal` instance with the given `el`.
 
 ### #show(fn)
-  Show the modal, emitting `show`, optionally calling `fn`.
+  Show the sheet, emitting `show`, optionally calling `fn`.
 
 ### #hide(fn)
-  Hide the modal, emitting `hide`, optionally calling `fn`.
+  Hide the sheet, emitting `hide`, optionally calling `fn`.
 
 ### #remove(fn)
-  Remove the modal from the DOM, optionally calling `fn`.
+  Remove the sheet from the DOM, optionally calling `fn`.
 
 ### #closeable()
-  Make the modal closeable.
+  Make the sheet closeable.
 
 ### #temporary()
-  Make the modal one-time-use, so that it removes itself on hiding.
+  Make the sheet one-time-use, so that it removes itself on hiding.
 
 ### #addClass(name)
-  Add a class `name` to the `.modal` and `.modal-overlay`.
+  Add a class `name` to the `.sheet` and `.sheet-overlay`.
 
 ### #removeClass(name)
-  Remove a class `name` from the `.modal` and `.modal-overlay`.
+  Remove a class `name` from the `.sheet` and `.sheet-overlay`.
 
 ## License
 
