@@ -20,13 +20,13 @@ sheet(el).show();
 ## API
 
 ```html
-<div class="overlay sheet-overlay"></div>
-<div class="sheet-wrapper">
-  <div class="sheet">
-    <a class="sheet-close-button"></a>
+<div class="Modal" effect="sheet-left">
+  <div class="Sheet">
+    <a class="Sheet-close-button"></a>
     { Your element gets injected here. }
   </div>
 </div>
+<div class="Overlay"></div>
 ```
 
 A [`segmentio/overlay`](https://github.com/segmentio/overlay) element (with an `.overlay` class) is used to create the mask above the screen, so if you've already themed it you've got no more work to do.
@@ -40,15 +40,6 @@ A [`segmentio/overlay`](https://github.com/segmentio/overlay) element (with an `
 
 ### #hide(fn)
   Hide the sheet, emitting `hide`, optionally calling `fn`.
-
-### #remove(fn)
-  Remove the sheet from the DOM, optionally calling `fn`.
-
-### #closeable()
-  Make the sheet closeable.
-
-### #temporary()
-  Make the sheet one-time-use, so that it removes itself on hiding.
 
 ### #addClass(name)
   Add a class `name` to the `.sheet` and `.sheet-overlay`.

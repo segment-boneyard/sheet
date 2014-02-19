@@ -7,10 +7,9 @@
   "keywords": ["modal", "sheet", "ui", "overlay"],
   "dependencies": {
     "component/domify": "*",
-    "component/inherit": "*",
-    "segmentio/overlay": "*",
-    "segmentio/modal": "0.2.1",
-    "ianstormtaylor/redraw": "*"
+    "component/delegate": "*",
+    "segmentio/modal": "0.3.3",
+    "ianstormtaylor/classes": "0.1.0"
   },
   "development": {
     "component/assert": "*",

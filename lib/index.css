@@ -1,21 +1,39 @@
 
 /**
  * Sheet.
- *
- * .sheet-overlay
- * .sheet-wrapper
+
  *   .sheet
  *     .sheet-close-button
  *     [content]
  */
 
-.sheet {
+ .Sheet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+}
+
+
+/**
+ * Modal effect
+ */
+
+.Modal[effect="sheet-right"],
+.Modal[effect="sheet-left"] {
   position: absolute;
   top: 0;
   bottom: 0;
   width: 60%;
+  z-index: 1001;
   -webkit-transition: -webkit-transform .3s;
   transition: transform .3s;
+  max-width: none;
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 
@@ -23,13 +41,20 @@
  * Right-aligned.
  */
 
-.sheet.right-aligned {
+.Modal[effect="sheet-right"] {
   right: 0;
+  left: auto;
 }
 
-.sheet.right-aligned.hidden {
+.Modal[effect="sheet-right"].hidden {
   -webkit-transform: translate3d(110%,0,0);
+  -moz-transform: translate3d(110%,0,0);
   transform: translate3d(100%,0,0);
+}
+
+.Modal[effect="sheet-right"] + .Overlay {
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0,0,0,.35));
+  background: linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.35));
 }
 
 
@@ -37,11 +62,18 @@
  * Left-aligned.
  */
 
-.sheet.left-aligned {
+.Modal[effect="sheet-left"]  {
   left: 0;
+  right: auto;
 }
 
-.sheet.left-aligned.hidden {
+.Modal[effect="sheet-left"].hidden {
   -webkit-transform: translate3d(-110%,0,0);
+  -moz-transform: translate3d(-110%,0,0);
   transform: translate3d(-110%,0,0);
+}
+
+.Modal[effect="sheet-left"] + .Overlay {
+  background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0), rgba(0,0,0,.35));
+  background: linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,.35));
 }
