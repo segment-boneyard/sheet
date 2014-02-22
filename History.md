@@ -1,5 +1,4 @@
-
-0.0.2 - February 12, 2013
+0.0.2 - February 12, 2014
 -------------------------
 * peg modal at older version
 
