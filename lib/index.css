@@ -23,7 +23,7 @@
 
 .Modal[effect="sheet-right"],
 .Modal[effect="sheet-left"] {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   width: 60%;
