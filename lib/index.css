@@ -27,7 +27,7 @@
   top: 0;
   bottom: 0;
   width: 60%;
-  z-index: 1001;
+  z-index: 101;
   -webkit-transition: -webkit-transform .3s;
   transition: transform .3s;
   max-width: none;
