@@ -2,7 +2,7 @@
   "name": "sheet",
   "repo": "segmentio/sheet",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A special modal that slides out from the right or left side of the screen.",
   "keywords": ["modal", "sheet", "ui", "overlay"],
   "dependencies": {
